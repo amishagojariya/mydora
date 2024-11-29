@@ -8,6 +8,13 @@ body{
    
 }
 
+span{
+    color: #163b4d;
+}
+span:hover{
+     color: rgb(255, 255, 255);
+}
+
 header{
     width: 100%;
     background-color: skyblue;
@@ -167,12 +174,51 @@ main .about {
 
 .story-characters{
     width: 100%;
+    padding: 20px;
     background-color: skyblue;
 }
 
 
 .our-characters{
     width: 100%;
-   
+    text-align: center;
+    font-size: 30px;
+    
+}
+.character-cards{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
 }
 
+.characters-card-img{
+    padding: 20px;
+    flex-direction:row;
+    width: 20%;
+    height: 590px;
+   margin: 0px auto;
+   background: #000;
+   border: 1px solid white;
+   text-align: center;
+   align-items: center;
+
+}
+
+.characters-card-img h1{
+    padding: 10px;
+    color: white;
+    font-size:35px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+}
+.characters-card-img img{
+    width:100%;
+    object-fit: cover; 
+    transition: all 1s;
+
+}
+.characters-card-img:hover img{
+    transform: translateY(-15px);
+    
+}
